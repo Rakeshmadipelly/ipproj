@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    margin: 0;
+    font: 0.8 em Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(https://media.istockphoto.com/photos/abstract-blue-geometric-shapes-logic-game-picture-id1138532569?b=1&k=20&m=1138532569&s=170667a&w=0&h=0zHtlwVjlzuXP0CJzrQ2ehfYaeZqmg0jlERpBSQk78s=);
+}
+  h1, ul {
+   margin: 0;
+   padding: 0;
+}
+  /* this is the largest wrapper 
+  containing all other container */
+#wrap {
+    
+    background: #fff;
+    width: max-content;
+    min-height: 400px;
+    height: max-content;
+
+    
+
+    background: rgba(255, 255, 255, 0.38);
+    box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    border-top: 2px solid rgba(255, 255, 255,0.8);
+    border-left: 2px solid rgba(255, 255, 255,0.8);
+    backdrop-filter: blur(8.5px);
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
+    transition: .3s ease; 
+}
+
+#warp:hover {
+    box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+  /* this is the header container */
+#header {
+    width: 100%;
+    min-height: 60px;
+
+    border-bottom: 2px solid rgba(255, 255, 255,0.8);
+    background-color: rgba(255, 255, 255, 0.5);
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    text-align: center;
+}
+
+#header h1 {
+    padding: 10px;
+    margin: 0;
+    font-size: 36px;
+    
+}
+
+#menu {
+   min-height: 30px;
+   padding-top: 12px;
+   padding-bottom: 12px;
+   background: rgba(255, 255, 255, 0.1);
+
+   /* background: #46acff; */
+
+   border-bottom: 2px solid rgba(255, 255, 255,0.8);
+}
+  /* this is the navigation part */
+#menu ul{
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+}
+#menu ul li{
+    margin-left: 12px;
+    float: left;
+    border-radius: 25px;
+    border: none;
+    
+    background: rgba(255, 255, 255,0.6);
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255,0.4);
+    border-left: 1px solid rgba(255, 255, 255,0.4);
+   
+    transition: .25s ease;
+}
+#menu ul li a{
+   display: block;
+   padding: 5px 12px;
+   color: rgb(0, 0, 0);
+   text-decoration: none;
+}
+
+#menu ul li a:hover{
+    background: none;
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0,0.5);
+
+    cursor: pointer;
+}
+
+#menu ul li ul li{
+   float: none;
+}
+
+#menu ul li ul{
+   position: absolute;
+   display: none;
+}
+
+#menu ul li:hover ul{
+   display: block;
+}
+
+#main {
+    background: rgba(255, 255, 255,0.5);
+    border-bottom: 2px solid rgba(255, 255, 255,0.8);
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+
+#content {
+    background: rgba(255, 255, 255,0.25);
+   float: left;
+   width: 660px;
+   padding: 20px;
+   min-height: 200px;
+   
+}
+  
+  #content h1{
+   font-size: 1.6em;
+  }
+  /* this is the right sidebar part */
+  #side {
+   float: right;
+   width: 219px;
+   padding: 10px;
+  }
+  #side table td{
+      border: 2px solid rgba(255, 255, 255,0.5);
+      background: rgba(255, 255, 255, 0.297);
+      width:15em;
+      backdrop-filter: blur(1.2px);
+     
+  }
+  
+  td a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.2em;
+      padding: 0px 0px 0px 10px;
+  }
+  td li{
+      list-style-type: none;
+  }
+  td li:hover{
+    
+    background: rgba(123, 123, 123, 0.5);
+  }
+  td li:active{
+    background: rgba(66, 66, 66, 0.5);
+  }
+  /*this clear class is for special purpose. 
+  this is for to clear the "float property" 
+  of the previous element, it will prevent 
+  footer to float */
+  
+  .clear{
+   clear: both;
+  }
+
+
+
+
+  /* this is the footer part */
+
+
+    
+#footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    
+    background: rgba(255, 255, 255, 0.7);
+    
+    width: 100%;
+    height: min-content;
+    transition: 0.25s ease-in;
+}
+
+#footer:hover {
+    background: rgba(255, 255, 255, 0.52);
+}
+
+#footer p {
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+
+
